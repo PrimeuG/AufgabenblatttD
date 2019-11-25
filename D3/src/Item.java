@@ -60,5 +60,5 @@ public class Item {
     @Override
     public String toString() {
         return "[[" + this.title + " ] [ " + this.link + " ] [ " + this.pubDate + " ] [ " + this.content + " ] [ " + description + " ] [ " + guid + " ]]";
-    }//test
+    }
 }

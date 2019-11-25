@@ -11,38 +11,16 @@ public class Main {
 
     public static void main(String[] args) {
         try {
+            XMLReader xmlReader = XMLReaderFactory.createXMLReader();
+            ItemContentHandler itemContentHandler = new ItemContentHandler();
+            xmlReader.setContentHandler(new ItemContentHandler());
             URL url = new URL("http://www.tagesschau.de/xml/rss2");
             URLConnection connection = url.openConnection();
             connection.setDoInput(true);
             InputStream inStream = connection.getInputStream();
-            BufferedReader input = new BufferedReader(new InputStreamReader(inStream));
-            String line = "";
-            while ((line = input.readLine()) != null) System.out.println(line);
-        } catch (Exception e) {
-            System.out.println(e.toString());
-        }
-
-        try {
-            // XMLReader erzeugen
-            XMLReader xmlReader = XMLReaderFactory.createXMLReader();
-
-            // Pfad zur XML Datei
-            FileReader reader = new FileReader("X:\\personen.xml");
-            InputSource inputSource = new InputSource(reader);
-
-            // DTD kann optional übergeben werden
-            // inputSource.setSystemId("X:\\personen.dtd");
-
-            // PersonenContentHandler wird übergeben
-            xmlReader.setContentHandler(new PersonenContentHandler());
-
-            // Parsen wird gestartet
+            InputSource inputSource = new InputSource(inStream);
             xmlReader.parse(inputSource);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
