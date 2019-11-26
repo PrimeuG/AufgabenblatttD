@@ -62,7 +62,7 @@ public class D4Main {
             Personen.add(0, Nachname.get(b));
             Personen.add(0, Vorname.get(b));
         }
-
+        //ausgabe noch ändern
         for (int b = 0; b < Personen.size(); b++){
             System.out.println(Personen.get(b));
         }
