@@ -31,7 +31,7 @@ public class ItemContentHandler implements ContentHandler {
             throws SAXException {
 
         // Titel setzen
-        if (localName.equals("titel")) {
+        if (localName.equals("title") && item != null) {
             item.setTitle(aktuellerPunkt);
         }
 
@@ -64,6 +64,7 @@ public class ItemContentHandler implements ContentHandler {
             alleItems.add(item);
             System.out.println(item);
         }
+
     }
 
     public void endDocument() throws SAXException {}
