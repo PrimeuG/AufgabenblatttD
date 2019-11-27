@@ -57,14 +57,14 @@ public class D4Main {
                 Aliasname.set(b, Speicherer);
             }
         }
-        for (int b = 0 ; b < Aliasname.size(); b++){
+        for (int b = Aliasname.size() -1 ; b >= 0; b--){
             Personen.add(0, Aliasname.get(b));
             Personen.add(0, Nachname.get(b));
             Personen.add(0, Vorname.get(b));
         }
+        System.out.println(Personen);
         //ausgabe noch ändern
-        for (int b = 0; b < Personen.size(); b++){
-            System.out.println(Personen.get(b));
-        }
+
+
     }
 }
