@@ -1,14 +1,20 @@
 import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
 import java.net.*;
 import java.io.*;
-import java.util.Date;
+
+//Tom Cybart 17469
+//Teile Aus Vorlesungsfolie übernommen
 
 public class Main {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         try {
             XMLReader xmlReader = XMLReaderFactory.createXMLReader();

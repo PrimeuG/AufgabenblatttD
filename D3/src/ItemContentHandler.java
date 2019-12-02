@@ -5,6 +5,11 @@ import org.xml.sax.SAXException;
 
 import java.util.ArrayList;
 
+//Tom Cybart 17469
+
+/**
+ * The type Item content handler.
+ */
 public class ItemContentHandler implements ContentHandler {
 
     private ArrayList<Item> alleItems = new ArrayList<>();
@@ -22,8 +27,6 @@ public class ItemContentHandler implements ContentHandler {
         if (localName.equals("item")) {
             item = new Item();
 
-            // Attribut id wird in einen Integer umgewandelt und dann zu der
-            // jeweiligen Person gesetzt
         }
     }
 
@@ -35,30 +38,6 @@ public class ItemContentHandler implements ContentHandler {
             item.setTitle(aktuellerPunkt);
         }
 
-       /* // Link setzen
-        if (localName.equals("link")) {
-            item.setLink(aktuellerPunkt);
-        }
-
-        // Datum setzen
-        if (localName.equals("pubDate")) {
-            item.setPubDate(aktuellerPunkt);
-        }
-
-        // Content setzen
-        if (localName.equals("content")) {
-            item.setContent(aktuellerPunkt);
-        }
-
-        // description setzen
-        if (localName.equals("description")) {
-            item.setDescription(aktuellerPunkt);
-        }
-
-        // Link setzen
-        if (localName.equals("guid")) {
-            item.setGuid(aktuellerPunkt);
-        }*/
 
         if (localName.equals("item")) {
             alleItems.add(item);
@@ -67,15 +46,30 @@ public class ItemContentHandler implements ContentHandler {
 
     }
 
-    public void endDocument() throws SAXException {}
-    public void endPrefixMapping(String prefix) throws SAXException {}
+    public void endDocument() throws SAXException {
+    }
+
+    public void endPrefixMapping(String prefix) throws SAXException {
+    }
+
     public void ignorableWhitespace(char[] ch, int start, int length)
-            throws SAXException {}
+            throws SAXException {
+    }
+
     public void processingInstruction(String target, String data)
-            throws SAXException {}
-    public void setDocumentLocator(Locator locator) {  }
-    public void skippedEntity(String name) throws SAXException {}
-    public void startDocument() throws SAXException {}
+            throws SAXException {
+    }
+
+    public void setDocumentLocator(Locator locator) {
+    }
+
+    public void skippedEntity(String name) throws SAXException {
+    }
+
+    public void startDocument() throws SAXException {
+    }
+
     public void startPrefixMapping(String prefix, String uri)
-            throws SAXException {}
+            throws SAXException {
+    }
 }
