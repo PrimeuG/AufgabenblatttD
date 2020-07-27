@@ -8,7 +8,650 @@
       {
         "title": "Irgendeinnamen",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 64,
+                "y": 405
+              },
+              "angle": 0,
+              "id": "c42c7c6d-97ef-43cc-af5c-ff0638cfd140",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "XML File"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 221,
+                "y": 87
+              },
+              "angle": 0,
+              "id": "73be27af-bcc6-4880-9818-98c880b6d21f",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "XML Parser"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "c42c7c6d-97ef-43cc-af5c-ff0638cfd140"
+              },
+              "target": {
+                "id": "73be27af-bcc6-4880-9818-98c880b6d21f"
+              },
+              "vertices": [
+                {
+                  "x": 200,
+                  "y": 310
+                },
+                {
+                  "x": 218,
+                  "y": 266
+                }
+              ],
+              "id": "bb976c60-8068-4c94-bb7c-761b58262204",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5102046428969863,
+                    "offset": 0.416966999903555
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Read XML config und\nXML Daten",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 463,
+                "y": 87
+              },
+              "angle": 0,
+              "id": "21c0681b-9e65-43a3-b1aa-160852373a35",
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Fragen/Antwor\nten sortieren"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 807,
+                "y": 282
+              },
+              "angle": 0,
+              "id": "9522cad5-355c-4caf-85ad-fa8c39907634",
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Punkte zählen"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 922,
+                "y": 58
+              },
+              "angle": 0,
+              "id": "c4fe0b31-5f31-4488-8b20-a46aa8cc930e",
+              "z": 6,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Punkte in\nHighscore\nwandeln"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 671,
+                "y": 86
+              },
+              "angle": 0,
+              "id": "a768c89e-787d-4b5b-af29-65e563a183b8",
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Quiz Prozess\n(Fragen\nbeantworten +\nAuswerten)"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 317,
+                "y": 405
+              },
+              "angle": 0,
+              "id": "5742fd20-ebd3-4123-9b57-bb632fa6859a",
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Liste mit Fragen und\nAntworten"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "73be27af-bcc6-4880-9818-98c880b6d21f"
+              },
+              "target": {
+                "id": "5742fd20-ebd3-4123-9b57-bb632fa6859a"
+              },
+              "vertices": [],
+              "id": "fade1218-a9c4-449c-b08a-534a05c08f65",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Fragen und\nAntworten einfügen",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "5742fd20-ebd3-4123-9b57-bb632fa6859a"
+              },
+              "target": {
+                "id": "21c0681b-9e65-43a3-b1aa-160852373a35"
+              },
+              "vertices": [
+                {
+                  "x": 417,
+                  "y": 298
+                },
+                {
+                  "x": 384,
+                  "y": 170
+                }
+              ],
+              "id": "4f6a667b-26a1-48dd-b4f3-93c07064c799",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Fragen und\nAntworten lesen",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 10,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 535,
+                "y": 405
+              },
+              "angle": 0,
+              "id": "5e2bf488-b8cc-4162-ac6b-131d4973bb75",
+              "z": 11,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Sortierte Liste"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "21c0681b-9e65-43a3-b1aa-160852373a35"
+              },
+              "target": {
+                "id": "5e2bf488-b8cc-4162-ac6b-131d4973bb75"
+              },
+              "vertices": [
+                {
+                  "x": 539,
+                  "y": 346
+                }
+              ],
+              "id": "67f8bc61-8f66-4fd2-872c-31bb413fbd4e",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Sortiert einfügen",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 12,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "5e2bf488-b8cc-4162-ac6b-131d4973bb75"
+              },
+              "target": {
+                "id": "a768c89e-787d-4b5b-af29-65e563a183b8"
+              },
+              "vertices": [],
+              "id": "d2dd62d4-0302-43af-9109-46c6d11ced19",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Fragen und\nAntworten lesen",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 13,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "a768c89e-787d-4b5b-af29-65e563a183b8"
+              },
+              "target": {
+                "id": "9522cad5-355c-4caf-85ad-fa8c39907634"
+              },
+              "vertices": [],
+              "id": "1d10e9e1-c5be-4f66-a985-26ffb48e6a54",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "erreichte Punkte",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 14,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "9522cad5-355c-4caf-85ad-fa8c39907634"
+              },
+              "target": {
+                "id": "c4fe0b31-5f31-4488-8b20-a46aa8cc930e"
+              },
+              "vertices": [],
+              "id": "a070b01e-a6c9-4590-a9b4-7976a697beae",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Punkte weitergeben",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 15,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "c4fe0b31-5f31-4488-8b20-a46aa8cc930e"
+              },
+              "target": {
+                "id": "c42c7c6d-97ef-43cc-af5c-ff0638cfd140"
+              },
+              "vertices": [
+                {
+                  "x": 876,
+                  "y": 588
+                },
+                {
+                  "x": 362,
+                  "y": 544
+                }
+              ],
+              "id": "c8653924-fb7b-44e3-8f53-a54eb6c80146",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Highscore in XML\nschreiben",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 17,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 441,
+                "y": 1
+              },
+              "angle": 0,
+              "id": "323ee77b-c6c4-4bbf-ac6a-ac707737575d",
+              "z": 18,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Highscore Liste"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 783,
+                "y": 1
+              },
+              "angle": 0,
+              "id": "7385b6bc-b3fe-433f-98bb-94b99d819d6b",
+              "z": 19,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Highscore\nanzeigen"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "73be27af-bcc6-4880-9818-98c880b6d21f"
+              },
+              "target": {
+                "id": "323ee77b-c6c4-4bbf-ac6a-ac707737575d"
+              },
+              "vertices": [],
+              "id": "322f2878-3f07-4ab4-a1b2-695511ca5f1d",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Highscore\nweitergeben",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 20,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "323ee77b-c6c4-4bbf-ac6a-ac707737575d"
+              },
+              "target": {
+                "id": "7385b6bc-b3fe-433f-98bb-94b99d819d6b"
+              },
+              "vertices": [],
+              "id": "1d9eb711-2455-4c85-9c71-c862367978b6",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Highscore lesen",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 21,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 661.25,
+          "width": 2878.475830078125
+        }
       }
     ]
   }
